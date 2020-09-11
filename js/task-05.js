@@ -7,5 +7,3 @@ inputName.addEventListener('input', event => {
         outputName.textContent = 'незнакомец';
     }
 });
-
-inputName.
