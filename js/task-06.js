@@ -10,7 +10,6 @@ const checkValidation = event => {
         if (inputRef.classList.contains('valid')) {
             inputRef.classList.remove('valid');
         }
-        inputRef.classList.remove('valid');
         inputRef.classList.add('invalid');
     }
 };
