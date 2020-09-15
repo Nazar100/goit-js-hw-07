@@ -15,8 +15,8 @@ const images = [
         alt: 'Group of Horses Running',
     },
 ];
-const imagesList = [];
-images.forEach(image => {
+
+const imagesList = images.map(image => {
     let item = document.createElement('li');
     let photo = document.createElement('img');
     item.append(photo);
@@ -24,7 +24,8 @@ images.forEach(image => {
     photo.alt = image.alt;
     photo.style.width = '300px';
     item.style.listStyle = 'none';
-    imagesList.push(item);
+
+    return item;
 });
 
 const gallery = document.querySelector('#gallery');

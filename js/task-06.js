@@ -12,6 +12,7 @@ const checkValidation = event => {
         }
         inputRef.classList.add('invalid');
     }
+    console.log(inputRef);
 };
 
 inputRef.addEventListener('change', checkValidation);
