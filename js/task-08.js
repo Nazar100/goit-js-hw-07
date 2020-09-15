@@ -1,6 +1,6 @@
 const inputRef = document.querySelector('#input-boxes');
 const createRef = document.querySelector('button[data-action="render"]');
-const delateRef = document.querySelector('button[data-action="destroy"]');
+const deleteRef = document.querySelector('button[data-action="destroy"]');
 const boxes = document.querySelector('#boxes');
 
 boxes.style.display = 'flex';
@@ -34,4 +34,4 @@ const destroy = () => {
 };
 
 createRef.addEventListener('click', createElement);
-delateRef.addEventListener('click', destroy);
+deleteRef.addEventListener('click', destroy);
